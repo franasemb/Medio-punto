@@ -1,0 +1,50 @@
+.btn-azul {
+  color: #fff;
+  border-radius: 3px;
+  width: 163px;
+  height: 45px;
+  background: #96c2db;
+}
+
+.btn-azul:hover {
+  border: 1px solid #96c2db;
+  color: #96c2db;
+  background: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.col-md-4 {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center !important;
+}
+
+.text-info-about {
+  color: #96c2db;
+}
+
+@media (max-width: 1100px) {
+  .course {
+    height: 423px;
+  }
+}
+@media (max-width: 900px) {
+  .course {
+    height: 455px;
+  }
+}
+@media (max-width: 780px) {
+  .course {
+    height: 485px;
+  }
+  .imagen-about,
+  .img-about {
+    display: none;
+  }
+}
+@media (max-width: 748px) {
+  .course {
+    height: 380px;
+  }
+}

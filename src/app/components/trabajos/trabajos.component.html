@@ -1,0 +1,502 @@
+<section class="container">
+  <div class="row">
+    <h3 class="text-dark text-center my-5">Trabajos Medio Punto</h3>
+    <ul
+      class="nav nav-pills mb-3 text-center align-items-center justify-content-center"
+      id="pills-tab"
+      role="tablist"
+    >
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="pills-todos-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-todos"
+          type="button"
+          role="tab"
+          aria-controls="pills-todos"
+          aria-selected="true"
+        >
+          Todos los amigurumis
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="pills-apego-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-apego"
+          type="button"
+          role="tab"
+          aria-controls="pills-apego"
+          aria-selected="false"
+        >
+          Pulpos y mantas de apego
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="pills-conejos-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-conejos"
+          type="button"
+          role="tab"
+          aria-controls="pills-conejos"
+          aria-selected="false"
+        >
+          Conejos
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="pills-osos-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-osos"
+          type="button"
+          role="tab"
+          aria-controls="pills-osos"
+          aria-selected="false"
+        >
+          Osos
+        </button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="pills-todos"
+        role="tabpanel"
+        aria-labelledby="pills-todos-tab"
+      >
+        <div class="row my-5" id="osos">
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalOsoVerde.modalShow()">
+                <img
+                  src="../../../assets/trabajos/osos/oso-verde-1.webp"
+                  class="card-image"
+                  alt="oso"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalOsaVioleta.modalShow()">
+                <img
+                  src="../../../assets/trabajos/osos/osa-violeta-2.webp"
+                  class="card-image"
+                  alt="oso"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejaNaranja.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/coneja-naranja-3.webp"
+                  class="card-image"
+                  alt="conejo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejoVerde.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/conejo-verde-1.webp"
+                  class="card-image"
+                  alt="conejo"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejaRosadaChenille.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/coneja-rosada-chenille-2.webp"
+                  class="card-image"
+                  alt="conejo"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejoBordo.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/conejo-bordo-3.webp"
+                  class="card-image"
+                  alt="conejo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejaRosada.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/coneja-rosada-1.webp"
+                  class="card-image"
+                  alt="conejos"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejoAguamarina.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/conejo-aguamarina-3.webp"
+                  class="card-image"
+                  alt="conejo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejoAzul.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/conejo-azul-1.webp"
+                  class="card-image"
+                  alt="conejo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejoAmarillo.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/conejo-amarillo-2.webp"
+                  class="card-image"
+                  alt="conejo"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalPulpoVioleta.modalShow()">
+                <img
+                  src="../../../assets/trabajos/mantas y pulpos/pulpo-violeta-1.webp"
+                  class="card-image"
+                  alt="pulpo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejoRojo.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/conejo-rojo-3.webp"
+                  class="card-image"
+                  alt="conejo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalPulpoBlanco.modalShow()">
+                <img
+                  src="../../../assets/trabajos/mantas y pulpos/pulpo-azul-blanco-2.webp"
+                  class="card-image"
+                  alt="pulpo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalMantaCeleste.modalShow()">
+                <img
+                  src="../../../assets/trabajos/mantas y pulpos/manta-3.webp"
+                  class="card-image"
+                  alt="manta"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="pills-conejos"
+        role="tabpanel"
+        aria-labelledby="pills-conejos-tab"
+      >
+        <div class="row my-5">
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejaRosada.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/coneja-rosada-1.webp"
+                  class="card-image"
+                  alt="conejos"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejaNaranja.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/coneja-naranja-2.webp"
+                  class="card-image"
+                  alt="conejos"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejaRosadaChenille.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/coneja-rosada-chenille-3.webp"
+                  class="card-image"
+                  alt="conejos"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejoBordo.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/conejo-bordo-1.webp"
+                  class="card-image"
+                  alt="conejos"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejoVerde.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/conejo-verde-2.webp"
+                  class="card-image"
+                  alt="conejos"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejoAguamarina.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/conejo-aguamarina-3.webp"
+                  class="card-image"
+                  alt="conejos"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejoAzul.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/conejo-azul-1.webp"
+                  class="card-image"
+                  alt="conejos"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejoAmarillo.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/conejo-amarillo-2.webp"
+                  class="card-image"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalConejoRojo.modalShow()">
+                <img
+                  src="../../../assets/trabajos/conejos/conejo-rojo-3.webp"
+                  class="card-image"
+                  alt="conejos"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="pills-apego"
+        role="tabpanel"
+        aria-labelledby="pills-apego-tab"
+      >
+        <div class="row my-5" id="pulpos">
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalPulpoVioleta.modalShow()">
+                <img
+                  src="../../../assets/trabajos/mantas y pulpos/pulpo-violeta-1.webp"
+                  class="card-image"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalPulpoBlanco.modalShow()">
+                <img
+                  src="../../../assets/trabajos/mantas y pulpos/pulpo-azul-blanco-2.webp"
+                  class="card-image"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalMantaCeleste.modalShow()">
+                <img
+                  src="../../../assets/trabajos/mantas y pulpos/manta-3.webp"
+                  class="card-image"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="pills-osos"
+        role="tabpanel"
+        aria-labelledby="pills-osos-tab"
+      >
+        <div class="row my-5" id="osos">
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalOsoVerde.modalShow()">
+                <img
+                  src="../../../assets/trabajos/osos/oso-verde-1.webp"
+                  class="card-image"
+                  alt="conejos"
+              /></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 my-3">
+            <div class="card">
+              <a (click)="modalOsaVioleta.modalShow()">
+                <img
+                  src="../../../assets/trabajos/osos/osa-violeta-2.webp"
+                  class="card-image"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-modal
+    [title]="'Coneja Rosada'"
+    [imagen1]="'../../../assets/trabajos/conejos/coneja-rosada-1.webp'"
+    [imagen2]="'../../../assets/trabajos/conejos/coneja-rosada-2.webp'"
+    [imagen3]="'../../../assets/trabajos/conejos/coneja-rosada-3.webp'"
+    #modalConejaRosada
+  ></app-modal>
+
+  <app-modal
+    [title]="'Coneja Naranja'"
+    [imagen1]="'../../../assets/trabajos/conejos/coneja-naranja-1.webp'"
+    [imagen2]="'../../../assets/trabajos/conejos/coneja-naranja-2.webp'"
+    [imagen3]="'../../../assets/trabajos/conejos/coneja-naranja-3.webp'"
+    #modalConejaNaranja
+  ></app-modal>
+
+  <app-modal
+    [title]="'Coneja Rosada Chennile'"
+    [imagen1]="'../../../assets/trabajos/conejos/coneja-rosada-chenille-1.webp'"
+    [imagen2]="'../../../assets/trabajos/conejos/coneja-rosada-chenille-2.webp'"
+    [imagen3]="'../../../assets/trabajos/conejos/coneja-rosada-chenille-3.webp'"
+    #modalConejaRosadaChenille
+  ></app-modal>
+
+  <app-modal
+    [title]="'Conejo Aguamarina '"
+    [imagen1]="'../../../assets/trabajos/conejos/conejo-aguamarina-1.webp'"
+    [imagen2]="'../../../assets/trabajos/conejos/conejo-aguamarina-2.webp'"
+    [imagen3]="'../../../assets/trabajos/conejos/conejo-aguamarina-3.webp'"
+    #modalConejoAguamarina
+  ></app-modal>
+  <app-modal
+    [title]="'Conejo Verde '"
+    [imagen1]="'../../../assets/trabajos/conejos/conejo-verde-1.webp'"
+    [imagen2]="'../../../assets/trabajos/conejos/conejo-verde-2.webp'"
+    [imagen3]="'../../../assets/trabajos/conejos/conejo-verde-3.webp'"
+    #modalConejoVerde
+  ></app-modal>
+  <app-modal
+    [title]="'Conejo Bordo '"
+    [imagen1]="'../../../assets/trabajos/conejos/conejo-bordo-1.webp'"
+    [imagen2]="'../../../assets/trabajos/conejos/conejo-bordo-2.webp'"
+    [imagen3]="'../../../assets/trabajos/conejos/conejo-bordo-3.webp'"
+    #modalConejoBordo
+  ></app-modal>
+  <app-modal
+    [title]="'Conejo Azul '"
+    [imagen1]="'../../../assets/trabajos/conejos/conejo-azul-1.webp'"
+    [imagen2]="'../../../assets/trabajos/conejos/conejo-azul-2.webp'"
+    [imagen3]="'../../../assets/trabajos/conejos/conejo-azul-3.webp'"
+    #modalConejoAzul
+  ></app-modal>
+
+  <app-modal
+    [title]="'Conejo Amarillo '"
+    [imagen1]="'../../../assets/trabajos/conejos/conejo-amarillo-1.webp'"
+    [imagen2]="'../../../assets/trabajos/conejos/conejo-amarillo-2.webp'"
+    [imagen3]="'../../../assets/trabajos/conejos/conejo-amarillo-3.webp'"
+    #modalConejoAmarillo
+  ></app-modal>
+  <app-modal
+    [title]="'Conejo Rojo'"
+    [imagen1]="'../../../assets/trabajos/conejos/conejo-rojo-1.webp'"
+    [imagen2]="'../../../assets/trabajos/conejos/conejo-rojo-2.webp'"
+    [imagen3]="'../../../assets/trabajos/conejos/conejo-rojo-3.webp'"
+    #modalConejoRojo
+  ></app-modal>
+  <app-modal
+    [title]="'Manta de apego Celeste'"
+    [imagen1]="'../../../assets/trabajos/mantas y pulpos/manta-1.webp'"
+    [imagen2]="'../../../assets/trabajos/mantas y pulpos/manta-2.webp'"
+    [imagen3]="'../../../assets/trabajos/mantas y pulpos/manta-3.webp'"
+    #modalMantaCeleste
+  ></app-modal>
+  <app-modal
+    [title]="'Pulpo de apego Azul y Blanco'"
+    [imagen1]="
+      '../../../assets/trabajos/mantas y pulpos/pulpo-azul-blanco-1.webp'
+    "
+    [imagen2]="
+      '../../../assets/trabajos/mantas y pulpos/pulpo-azul-blanco-2.webp'
+    "
+    [imagen3]="
+      '../../../assets/trabajos/mantas y pulpos/pulpo-azul-blanco-3.webp'
+    "
+    #modalPulpoBlanco
+  ></app-modal>
+  <app-modal
+    [title]="'Pulpo de apego Violeta'"
+    [imagen1]="'../../../assets/trabajos/mantas y pulpos/pulpo-violeta-1.webp'"
+    [imagen2]="'../../../assets/trabajos/mantas y pulpos/pulpo-violeta-2.webp'"
+    [imagen3]="'../../../assets/trabajos/mantas y pulpos/pulpo-violeta-3.webp'"
+    #modalPulpoVioleta
+  ></app-modal>
+  <app-modal
+    [title]="'Osa Violeta'"
+    [imagen1]="'../../../assets/trabajos/osos/osa-violeta-1.webp'"
+    [imagen2]="'../../../assets/trabajos/osos/osa-violeta-2.webp'"
+    [imagen3]="'../../../assets/trabajos/osos/osa-violeta-3.webp'"
+    #modalOsaVioleta
+  ></app-modal>
+  <app-modal
+    [title]="'Oso Verde'"
+    [imagen1]="'../../../assets/trabajos/osos/oso-verde-1.webp'"
+    [imagen2]="'../../../assets/trabajos/osos/oso-verde-2.webp'"
+    [imagen3]="'../../../assets/trabajos/osos/oso-verde-3.webp'"
+    #modalOsoVerde
+  ></app-modal>
+  <!-- </div> -->
+
+  <!-- <button class="btn btn-naranja text-center">Cargar más</button> -->
+</section>

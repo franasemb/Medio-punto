@@ -1,0 +1,145 @@
+<section class="container">
+  <div class="row">
+    <div class="text-center">
+      <h3 class="text-dark mt-5">Contacto</h3>
+      <p>Si tienes alguna pregunta no dudes en contactarnos.</p>
+    </div>
+
+    <div class="col my-5">
+      <form
+        (ngSubmit)="onSubmit(); resetFormulario()"
+        [formGroup]="contactForm"
+        class="contact100-form validate-form"
+      >
+        <div
+          class="wrap-input100 validate-input"
+          [ngClass]="{'alert-validate': contactForm.get('name')?.touched && contactForm.get('name')?.errors?.['required'] ,'true-validate ': contactForm.get('name')?.touched && contactForm.get('name')?.valid}"
+          data-validate="Por favor introduce tu nombre"
+        >
+          <input
+            class="input100"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nombre"
+            required
+            formControlName="name"
+          />
+          <span class="focus-input100"></span>
+
+          <span
+            *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.errors?.['required']"
+            class="btn-hide-validate bx bx-x-circle"
+          ></span>
+          <span
+            *ngIf="
+              contactForm.get('name')?.touched && contactForm.get('name')?.valid
+            "
+            class="btn-validate bx bx-check-circle"
+          ></span>
+        </div>
+        <div
+          class="wrap-input100 validate-input"
+          [ngClass]="{'alert-validate': contactForm.get('email')?.touched && contactForm.get('email')?.errors?.['required'] ,'true-validate ': contactForm.get('email')?.touched && contactForm.get('email')?.valid}"
+          data-validate="Por favor introduce tu email: e@a.x"
+        >
+          <div
+            [ngClass]="{'alert-validate': contactForm.get('email')?.touched && contactForm.get('email')?.errors?.['email'] ,'true-validate ': contactForm.get('email')?.touched && contactForm.get('email')?.valid}"
+            class="wrap-input100 validate-input alert-validate"
+            data-validate="Por favor introduce tu email: e@a.x"
+          ></div>
+          <input
+            class="input100"
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+            formControlName="email"
+          />
+          <span class="focus-input100"></span>
+          <span
+            *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.errors?.['required']"
+            class="btn-hide-validate bx bx-x-circle"
+          ></span>
+
+          <span
+            *ngIf="
+              contactForm.get('email')?.touched &&
+              contactForm.get('email')?.valid
+            "
+            class="btn-validate bx bx-check-circle"
+          ></span>
+        </div>
+
+        <div
+          class="wrap-input100 validate-input"
+          [ngClass]="{'alert-validate': contactForm.get('message')?.touched && contactForm.get('message')?.errors?.['required'] ,'true-validate ': contactForm.get('message')?.touched && contactForm.get('message')?.valid}"
+          data-validate="Por favor introduce tu mensaje"
+        >
+          <textarea
+            class="input100"
+            name="message"
+            id="message"
+            placeholder="Mensaje"
+            required
+            formControlName="message"
+          ></textarea>
+          <span class="focus-input100"></span>
+          <span
+            *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.errors?.['required']"
+            class="btn-hide-validate bx bx-x-circle"
+          ></span>
+          <span
+            *ngIf="
+              contactForm.get('message')?.touched &&
+              contactForm.get('message')?.valid
+            "
+            class="btn-validate bx bx-check-circle"
+          ></span>
+        </div>
+        <div class="container-contact100-form-btn">
+          <button
+            type="submit"
+            [disabled]="contactForm.invalid"
+            [ngClass]="{
+              'contact100-form-btn': contactForm.valid,
+              'contact100-form-btn-invalid': contactForm.invalid
+            }"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col my-5">
+      <div
+        class="courses-container d-flex align-items-center justify-content-center"
+      >
+        <div class="course">
+          <div class="course-info">
+            <img src="../../../assets/oficina.webp" class="pt-4 mt-2" alt="edificio"/>
+            <h5 class="ms-4 ps-5 text-dark mt-3">Redes sociales</h5>
+            <p class="ms-4 ps-5 mb-5">
+              <i class="bx bxl-instagram fw-bold me-2"></i>medio_punto_amigurumi
+              <br />
+              <i class="bx bxl-facebook fw-bold me-2"></i>Daniela Guiffrey
+            </p>
+
+            <img src="../../../assets/email.webp" class="pt-1" alt="email"/>
+            <h5 class="ms-4 ps-5 text-dark mt-4">Email</h5>
+            <p class="ms-4 ps-5 mb-5">mediopuntoamigurumi@gmail.com</p>
+
+            <img src="../../../assets/ubicacion.webp" class="pt-1" alt="ubicacion"/>
+            <h5 class="ms-4 ps-5 text-dark mt-4">Localicación</h5>
+            <p class="ms-4 ps-5">
+              Villa Elisa, Entre Riós, <br />
+              Argentina
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
