@@ -1,6 +1,5 @@
 import { Component} from '@angular/core';
 import {
-  FormBuilder,
   FormGroup,
   FormControl,
   Validators,
@@ -9,7 +8,6 @@ import Swal from 'sweetalert2';
 import {
   Firestore,
   collection,
-  CollectionReference,
   addDoc,
 } from '@angular/fire/firestore';
 import 'firebase/firestore';
