@@ -6,17 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./modal.component.css'],
 })
 export class ModalComponent {
-  @Input() title = ' ';
-  @Input() imagen1 = ' ';
-  @Input() imagen2 = ' ';
-  @Input() imagen3 = ' ';
+  @Input() id: string = '';
+  @Input() title: string = '';
+  @Input() url: Array<string> = [''];
 
-  public show = false;
-  modalShow() {
-    this.show = true;
-  }
-  modalHide() {
-    this.show = false;
-  }
- 
 }

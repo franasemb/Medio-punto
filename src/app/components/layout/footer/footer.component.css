@@ -1,6 +1,14 @@
 svg {
   width: 18px;
 }
+.nav-link {
+  color: #6c757d;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+.nav-link:hover {
+  color: #c65471;
+}
 @media (max-width: 578px) {
   footer {
     text-align: center;

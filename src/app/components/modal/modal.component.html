@@ -1,64 +1,65 @@
-<div *ngIf="show">
-  <div class="modal-container">
+<div
+  class="modal"
+  [id]="id"
+  tabindex="-1"
+  role="dialog"
+  [attr.data-bs-target]="id"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+  
+>
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <h5 class="modal-title d-inline-flex">
-        {{ title }}
-      </h5>
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          {{ title }}
+        </h5>
 
-      <button
-        type="button"
-        class="close d-inline-flex"
-        aria-label="Close"
-        (click)="modalHide()"
-      >
-        ✖
-      </button>
-
-      <div class="modal-body">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
+        <button
+          type="button"
+          class="close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
         >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="#5a5a5a"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
+              data-bs-target="#myCarousel"
               aria-current="true"
               aria-label="Slide 1"
+              *ngFor="let image of url; let i = index"
+              [attr.data-bs-slide-to]="i"
+              [class.active]="i === 0"
             ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-           
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="{{ imagen1 }}" class="modal-image" />
+            <div
+              class="carousel-item"
+              *ngFor="let image of url; let i = index"
+              [class.active]="i === 0"
+            >
+              <img [src]="image" [alt]="title + i" class="img-fluid" />
             </div>
-            <div class="carousel-item">
-              <img src="{{ imagen2 }}" class="modal-image" />
-            </div>
-            <div class="carousel-item">
-              <img src="{{ imagen3 }}" class="modal-image" />
-            </div>
-        
           </div>
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#myCarousel"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -67,7 +68,7 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#myCarousel"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>

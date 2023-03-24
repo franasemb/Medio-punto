@@ -1,5 +1,28 @@
+.container {
+  padding-top: 3rem;
+  margin-bottom: 20rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.content-container {
+  order: 1;
+}
+
+.img-container {
+  order: 2;
+}
+
 .text-42 {
   font-size: 42px;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
 }
 
 .btn-outline-celeste {
@@ -30,21 +53,31 @@
 }
 .img-ami {
   max-width: 130px;
+  max-height: 58px;
 }
 .img-jumbo {
-  max-width: 800px;
-}
-@media (max-width: 1368px) {
-  .img-jumbo {
-    max-width: 500px;
-  }
+  max-width: 550px;
+  max-height: 337.9375px;
 }
 
 @media (max-width: 1000px) {
   .text-jumbo {
     text-align: center;
+    justify-content: center;
   }
-  .img,
+
+  .img-jumbo {
+    display: none;
+  }
+  .col {
+    flex: none;
+  }
+  .container {
+    padding-top: 10rem;
+  }
+}
+
+@media (max-width: 758px) {
   .img-jumbo {
     display: none;
   }

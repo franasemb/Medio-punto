@@ -1,3 +1,18 @@
+p {
+  margin: 0;
+}
+
+section {
+  background-color: #f4f6fa;
+  border-radius: 25px;
+  padding: 4rem;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .btn-azul {
   color: #fff;
   border-radius: 3px;
@@ -13,38 +28,33 @@
   transition: all 0.2s ease-in-out;
 }
 
-.col-md-4 {
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center !important;
+.img-card {
+  max-width: 160px;
 }
-
 .text-info-about {
   color: #96c2db;
+  text-transform: uppercase;
 }
-
-@media (max-width: 1100px) {
-  .course {
-    height: 423px;
+@media (max-width: 980px) {
+  .image-about,
+  img {
+    display: none;
   }
-}
-@media (max-width: 900px) {
-  .course {
-    height: 455px;
+  .container {
+    justify-content: center;
+  }
+  .col-4 {
+    flex: none;
+    width: 60%;
   }
 }
 @media (max-width: 780px) {
-  .course {
-    height: 485px;
-  }
-  .imagen-about,
-  .img-about {
-    display: none;
+  .container {
+    justify-content: center;
   }
 }
 @media (max-width: 748px) {
-  .course {
-    height: 380px;
+  .container {
+    justify-content: center;
   }
 }

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { ContactoRoutingModule } from './contacto-routing.module';
-import { ContactoComponent } from 'src/app/components/contacto/contacto.component';
+import { ContactoComponent } from 'src/app/pages/contacto/contacto.component';
 
 @NgModule({
   declarations: [ContactoComponent],

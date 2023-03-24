@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container" id="contact" #contact>
   <div class="row">
     <div class="text-center">
       <h3 class="text-dark mt-5">Contacto</h3>
@@ -7,7 +7,7 @@
 
     <div class="col my-5">
       <form
-        (ngSubmit)="onSubmit(); resetFormulario()"
+        (ngSubmit)="onSubmit($event)"
         [formGroup]="contactForm"
         class="contact100-form validate-form"
       >
@@ -22,8 +22,8 @@
             name="name"
             id="name"
             placeholder="Nombre"
-            required
             formControlName="name"
+            required
           />
           <span class="focus-input100"></span>
 
@@ -44,9 +44,12 @@
           data-validate="Por favor introduce tu email: e@a.x"
         >
           <div
-            [ngClass]="{'alert-validate': contactForm.get('email')?.touched && contactForm.get('email')?.errors?.['email'] ,'true-validate ': contactForm.get('email')?.touched && contactForm.get('email')?.valid}"
-            class="wrap-input100 validate-input alert-validate"
-            data-validate="Por favor introduce tu email: e@a.x"
+            class="wrap-input100 validate-input"
+            [ngClass]="{
+              'true-validate':
+                contactForm.get('email')?.touched &&
+                contactForm.get('email')?.valid
+            }"
           ></div>
           <input
             class="input100"
@@ -58,17 +61,10 @@
             formControlName="email"
           />
           <span class="focus-input100"></span>
-          <span
-            *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.errors?.['required']"
-            class="btn-hide-validate bx bx-x-circle"
-          ></span>
 
           <span
-            *ngIf="
-              contactForm.get('email')?.touched &&
-              contactForm.get('email')?.valid
-            "
-            class="btn-validate bx bx-check-circle"
+            class="btn-validate bx"
+            [ngClass]="{'bx-check-circle': contactForm.get('email')?.touched && contactForm.get('email')?.valid, 'bx-x-circle': contactForm.get('email')?.touched && contactForm.get('email')?.errors?.['required']}"
           ></span>
         </div>
 
@@ -119,19 +115,105 @@
       >
         <div class="course">
           <div class="course-info">
-            <img src="../../../assets/oficina.webp" class="pt-4 mt-2" alt="edificio"/>
+            <img
+              ngSrc="/assets/oficina.webp"
+              srcset="/assets/oficina.webp"
+              class="pt-4 mt-2"
+              alt="Redes sociales imagen"
+            />
             <h5 class="ms-4 ps-5 text-dark mt-3">Redes sociales</h5>
+
             <p class="ms-4 ps-5 mb-5">
-              <i class="bx bxl-instagram fw-bold me-2"></i>medio_punto_amigurumi
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="#666666"
+                viewBox="0 0 256 256"
+                class="me-1"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <circle
+                  cx="128"
+                  cy="128"
+                  r="34"
+                  fill="none"
+                  stroke="#666666"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="24"
+                ></circle>
+                <rect
+                  x="32"
+                  y="32"
+                  width="192"
+                  height="192"
+                  rx="48"
+                  fill="none"
+                  stroke="#666666"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="24"
+                ></rect>
+                <circle cx="180" cy="76" r="16"></circle></svg
+              >medio_punto_amigurumi
               <br />
-              <i class="bx bxl-facebook fw-bold me-2"></i>Daniela Guiffrey
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="#666666"
+                viewBox="0 0 256 256"
+                class="me-1"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <circle
+                  cx="128"
+                  cy="128"
+                  r="96"
+                  fill="none"
+                  stroke="#666666"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="24"
+                ></circle>
+                <path
+                  d="M168,88H152a23.9,23.9,0,0,0-24,24V224"
+                  fill="none"
+                  stroke="#666666"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="24"
+                ></path>
+                <line
+                  x1="96"
+                  y1="144"
+                  x2="160"
+                  y2="144"
+                  fill="none"
+                  stroke="#666666"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="24"
+                ></line></svg
+              >Daniela Guiffrey
             </p>
 
-            <img src="../../../assets/email.webp" class="pt-1" alt="email"/>
+            <img
+              ngSrc="/assets/email.webp"
+              srcset="/assets/email.webp"
+              class="pt-1"
+              alt="email imagen"
+            />
             <h5 class="ms-4 ps-5 text-dark mt-4">Email</h5>
             <p class="ms-4 ps-5 mb-5">mediopuntoamigurumi@gmail.com</p>
 
-            <img src="../../../assets/ubicacion.webp" class="pt-1" alt="ubicacion"/>
+            <img
+              ngSrc="/assets/ubicacion.webp"
+              srcset="/assets/ubicacion.webp"
+              class="pt-1"
+              alt="ubicacion imagen"
+            />
             <h5 class="ms-4 ps-5 text-dark mt-4">Localicación</h5>
             <p class="ms-4 ps-5">
               Villa Elisa, Entre Riós, <br />

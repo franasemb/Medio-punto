@@ -1,88 +1,31 @@
-<section class="container py-5" id="about">
-  <hr class="my-5" />
-  <h2 class="text-center fw-bold text-gris">Sobre nosotros</h2>
-  <p class="text-center">Te ayudamos a elegir el regalo perfecto.</p>
-  <div class="row my-5 mx-4">
-    <div class="col">
-      <p class="text-info-about text-uppercase fs-6">Medio Punto info</p>
-      <h3 class="text-gris text-uppercase fw-bold">
+<section class="mx-5" id="about">
+  <div class="container">
+    <div>
+      <p class="text-info-about">Sobre nosotros</p>
+      <h1 class="text-gris text-uppercase fw-bold">
         Amigurumis personalizados
-      </h3>
+      </h1>
       <p>
-        Medio Punto es un emprendimiento destinado a la venta de productos
+        Medio Punto es un emprendimiento destinado a la venta de peluches
         artesanales hechos al crochet.
-        <br />
-        Confecciono peluches tejidos completamente a mano, con hilo de algodón
-        de excelente calidad. Podés elegir la combinación que más te guste y te
-        lo tejo.
       </p>
-      <a href="/contacto">
+      <p class="mb-2">
+        Ofrecemos personalización en colores para hacer tu peluche único.
+        ¡Permítenos crear algo especial para ti!
+      </p>
+      <a routerLink="/contacto">
         <button class="btn btn-azul">Contactanos</button>
       </a>
     </div>
-    <div class="col my-4 imagen-about">
+    <div class="imagen-about">
       <img
-        src="../../../assets/about.webp"
-        class="img-fluid img-about"
-        alt="about"
+        srcset="/assets/about.webp"
+        ngSrc="/assets/about.webp"
+        class="img-fluid"
+        width="600"
+        height="450"
+        alt="about imagen"
       />
-    </div>
-  </div>
-  <div class="row my-5">
-    <div class="col-md-4 my-5">
-      <div class="courses-container">
-        <div class="course">
-          <div class="course-info">
-            <img
-              src="../../../assets/bola-de-hilo.webp"
-              class="img-card"
-              alt="bola de hilo card"
-            />
-            <h2 class="fw-bold text-gris">Hilo hipoalergénico</h2>
-            <p class="my-3">
-              Utilizo hilos 100% hipoalergénicos lo que disminuye el riesgo a
-              provocar un síntoma alérgico.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 my-5">
-      <div class="courses-container">
-        <div class="course">
-          <div class="course-info">
-            <img
-              src="../../../assets/ojo.webp"
-              class="img-card"
-              alt="ojo card"
-            />
-            <h2 class="fw-bold text-gris">Ojitos de seguridad</h2>
-            <p class="my-3">
-              A los ojos de tu amigurumi les coloco ojos de seguridad, es decir
-              que tienen un seguro por detrás que no permite sacarlos.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 my-5">
-      <div class="courses-container">
-        <div class="course">
-          <div class="course-info">
-            <img
-              src="../../../assets/modelo.webp"
-              class="img-card"
-              alt="modelo card"
-            />
-            <h2 class="fw-bold text-gris">Diferentes modelos</h2>
-            <p class="my-3">
-              Puedes elegir entre los modelos que realizo, solo tienes que
-              mandarme una foto del que te haya gustado y luego charlaremos
-              sobre el tamaño, color, tiempo de entrega y precio.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>

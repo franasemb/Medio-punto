@@ -1,42 +1,30 @@
 <section class="container">
-  <hr class="my-5" />
-  <h2 class="text-center fw-bold text-gris">Nuestros modelos</h2>
-  <div class="row my-5">
-    <div class="col-md-4">
-      <div class="game">
-        <div class="front">
-          <img src="../../../assets/pulpos-modelos.webp" alt="pulpos modelo" />
-          <h3 class="name">Pulpos</h3>
-        </div>
-        <div class="back">
-          <a routerLink="/trabajos">
-            <button class="btn btn-naranja my-5">Ver Todos</button>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="game">
-        <div class="front">
-          <img src="../../../assets/coneja-modelos.webp" alt="conejos modelo" />
-          <h3 class="name">Conejos</h3>
-        </div>
-        <div class="back">
-          <a routerLink="/trabajos">
-            <button class="btn btn-naranja my-5">Ver Todos</button>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="game">
-        <div class="front">
-          <img src="../../../assets/osos-modelo.webp" alt="osos modelo" />
-          <h3 class="name">Osos</h3>
-        </div>
-        <div class="back">
-          <a routerLink="/trabajos">
-            <button class="btn btn-naranja my-5">Ver Todos</button>
+  <h2 class="fw-bold text-gris">Nuestros modelos</h2>
+  <div class="row my-3">
+    <div class="col-md-4" *ngFor="let model of modelos">
+      <div class="card">
+        <img
+          [ngSrc]="model.url"
+          [srcset]="model.url"
+          width="1080"
+          height="1350"
+          class="img-fluid"
+          [alt]="model.name + 'modelo'"
+        />
+        <div class="card-content">
+          <p class="name">{{ model.name }}</p>
+          <a routerLink="/trabajos" type="button" class="btn btn-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#c65471"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"
+              ></path>
+            </svg>
           </a>
         </div>
       </div>

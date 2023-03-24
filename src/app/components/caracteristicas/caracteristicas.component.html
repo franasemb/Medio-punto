@@ -1,0 +1,24 @@
+<section class="container">
+  <div class="row">
+    <div
+      class="col-md-4 courses-container"
+      *ngFor="let info of caracteristicas"
+    >
+      <div class="course">
+        <div class="course-info">
+          <img
+            [ngSrc]="info.url"
+            width="160"
+            height="160"
+            class="img-card"
+            [alt]="info.alt"
+          />
+          <h2 class="fw-bold text-gris">{{ info.name }}</h2>
+          <p class="my-3">
+            {{ info.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

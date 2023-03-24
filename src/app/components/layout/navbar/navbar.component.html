@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand nav-title logo" href="/">
+      <img
+        ngSrc="/assets/logo.webp"
+        srcset="/assets/logo.webp"
+        class="img-navbar d-inline-block"
+        width="40"
+        height="40"
+        alt="navbar logo"
+      />
+      Medio Punto</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="#c65471"
+          viewBox="0 0 256 256"
+        >
+          <rect width="256" height="256" fill="none"></rect>
+          <line
+            x1="40"
+            y1="128"
+            x2="216"
+            y2="128"
+            fill="none"
+            stroke="#c65471"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"
+          ></line>
+          <line
+            x1="40"
+            y1="64"
+            x2="216"
+            y2="64"
+            fill="none"
+            stroke="#c65471"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"
+          ></line>
+          <line
+            x1="40"
+            y1="192"
+            x2="216"
+            y2="192"
+            fill="none"
+            stroke="#c65471"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"
+          ></line></svg
+      ></span>
+    </button>
+    <div
+      class="collapse navbar-collapse text-center"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+        <li class="nav-item" *ngFor="let item of navbar">
+          <a
+            class="nav-link text"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="active"
+            [routerLink]="item.link"
+            [fragment]="item.fragment"
+            >{{ item.name }}</a
+          >
+        </li>
+      </ul>
+
+      <div>
+        <a class="nav-link" href="/#about">
+          <button class="btn button-outline-grey">Sobre nosotros</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

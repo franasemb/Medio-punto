@@ -1,16 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
-  },
-  {
-    path: 'home',
     component: HomeComponent,
   },
   {
@@ -25,16 +20,18 @@ const routes: Routes = [
     loadChildren: () =>
       import('../app/modules/faqs/faqs.module').then((m) => m.FaqsModule),
   },
-  {
-    path: 'about',
-    component: AboutComponent,
-  },
+
   {
     path: 'trabajos',
     loadChildren: () =>
       import('../app/modules/trabajos/trabajos.module').then(
         (m) => m.TrabajosModule
       ),
+  },
+  {
+    path: '**',
+    redirectTo: '/',
+    pathMatch: 'full',
   },
 ];
 
