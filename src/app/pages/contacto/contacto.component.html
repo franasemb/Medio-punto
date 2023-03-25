@@ -1,4 +1,4 @@
-<section class="container" id="contact" #contact>
+<section class="container" class="mx-5">
   <div class="row">
     <div class="text-center">
       <h3 class="text-dark mt-5">Contacto</h3>
@@ -109,116 +109,25 @@
       </form>
     </div>
 
-    <div class="col my-5">
-      <div
-        class="courses-container d-flex align-items-center justify-content-center"
-      >
+    <div class="col">
+      <div class="courses-container">
         <div class="course">
-          <div class="course-info">
-            <img
-              ngSrc="/assets/oficina.webp"
-              srcset="/assets/oficina.webp"
-              class="pt-4 mt-2"
-              alt="Redes sociales imagen"
-            />
-            <h5 class="ms-4 ps-5 text-dark mt-3">Redes sociales</h5>
+          <div class="course-info" *ngFor="let course of courses">
+            <div class="course-image">
+              <img
+                [ngSrc]="course.image"
+                width="53"
+                height="53"
+                class="img-fluid"
+                [alt]="course.alt"
+              />
+            </div>
 
-            <p class="ms-4 ps-5 mb-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
-                fill="#666666"
-                viewBox="0 0 256 256"
-                class="me-1"
-              >
-                <rect width="256" height="256" fill="none"></rect>
-                <circle
-                  cx="128"
-                  cy="128"
-                  r="34"
-                  fill="none"
-                  stroke="#666666"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
-                ></circle>
-                <rect
-                  x="32"
-                  y="32"
-                  width="192"
-                  height="192"
-                  rx="48"
-                  fill="none"
-                  stroke="#666666"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
-                ></rect>
-                <circle cx="180" cy="76" r="16"></circle></svg
-              >medio_punto_amigurumi
-              <br />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
-                fill="#666666"
-                viewBox="0 0 256 256"
-                class="me-1"
-              >
-                <rect width="256" height="256" fill="none"></rect>
-                <circle
-                  cx="128"
-                  cy="128"
-                  r="96"
-                  fill="none"
-                  stroke="#666666"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
-                ></circle>
-                <path
-                  d="M168,88H152a23.9,23.9,0,0,0-24,24V224"
-                  fill="none"
-                  stroke="#666666"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
-                ></path>
-                <line
-                  x1="96"
-                  y1="144"
-                  x2="160"
-                  y2="144"
-                  fill="none"
-                  stroke="#666666"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
-                ></line></svg
-              >Daniela Guiffrey
-            </p>
+            <div class="course-content">
+              <h5 class="text-dark">{{ course.h5 }}</h5>
 
-            <img
-              ngSrc="/assets/email.webp"
-              srcset="/assets/email.webp"
-              class="pt-1"
-              alt="email imagen"
-            />
-            <h5 class="ms-4 ps-5 text-dark mt-4">Email</h5>
-            <p class="ms-4 ps-5 mb-5">mediopuntoamigurumi@gmail.com</p>
-
-            <img
-              ngSrc="/assets/ubicacion.webp"
-              srcset="/assets/ubicacion.webp"
-              class="pt-1"
-              alt="ubicacion imagen"
-            />
-            <h5 class="ms-4 ps-5 text-dark mt-4">Localicación</h5>
-            <p class="ms-4 ps-5">
-              Villa Elisa, Entre Riós, <br />
-              Argentina
-            </p>
+              <p class="mb-5" [innerHTML]="course.p"></p>
+            </div>
           </div>
         </div>
       </div>

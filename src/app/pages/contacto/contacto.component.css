@@ -2,12 +2,6 @@ img {
   max-width: 53px;
   float: left;
 }
-
-.course {
-  width: 600px;
-  height: 400px;
-}
-
 a {
   font-size: 14px;
   line-height: 1.7;
@@ -68,9 +62,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
 }
-.container {
-  max-width: 1200px;
-}
+
 .container-contact100 {
   width: 100%;
   min-height: 100vh;
@@ -282,4 +274,38 @@ textarea.input100 {
   color: #999;
   line-height: 1.5;
   text-align: center;
+}
+.courses-container {
+  display: flex;
+  justify-content: center;
+}
+.course {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  margin: 30px;
+  max-width: 800px;
+  height: 100%;
+  padding-top: 30px;
+}
+
+.course h6 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.course h2 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.course-info {
+  padding-left: 30px;
+}
+
+.course-content {
+  margin-left: 4rem;
+  margin-right: 2rem;
 }

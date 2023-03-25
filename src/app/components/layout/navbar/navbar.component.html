@@ -71,11 +71,11 @@
       <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
         <li class="nav-item" *ngFor="let item of navbar">
           <a
+            type="button"
             class="nav-link text"
             [routerLinkActiveOptions]="{ exact: true }"
             routerLinkActive="active"
             [routerLink]="item.link"
-            [fragment]="item.fragment"
             >{{ item.name }}</a
           >
         </li>

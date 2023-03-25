@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   navbar = [
-    { name: 'Inicio', link: '', fragment: 'inicio' },
-    { name: 'Trabajos', link: '/trabajos', fragment: 'trabajos' },
-    { name: 'Contacto', link: '/contacto', fragment: 'contact' },
+    { name: 'Inicio', link: '/' },
+    { name: 'Trabajos', link: '/trabajos' },
+    { name: 'Contacto', link: '/contacto' },
   ];
 }
