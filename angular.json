@@ -20,7 +20,6 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/lana.web", "src/assets"],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/bootstrap.css",
               "src/styles.css"
             ],
@@ -87,7 +86,6 @@
             "karmaConfig": "karma.conf.js",
             "assets": ["src/lana.web", "src/assets"],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/bootstrap.css",
               "src/styles.css"
             ],
