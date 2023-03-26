@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { NgOptimizedImage } from '@angular/common';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/layout/navbar/navbar.component';
@@ -14,6 +15,7 @@ import { ModelosComponent } from './components/modelos/modelos.component';
 import { CaracteristicasComponent } from './components/caracteristicas/caracteristicas.component';
 
 import { HomeComponent } from './pages/home/home.component';
+import { GoToTopComponent } from './components/go-to-top/go-to-top.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { HomeComponent } from './pages/home/home.component';
     ModelosComponent,
     FooterComponent,
     CaracteristicasComponent,
+    GoToTopComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgOptimizedImage,
+    NgxPageScrollModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

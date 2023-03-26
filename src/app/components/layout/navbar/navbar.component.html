@@ -71,18 +71,27 @@
       <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
         <li class="nav-item" *ngFor="let item of navbar">
           <a
-            type="button"
+            pageScroll
+            [pageScrollOffset]="150"
+            [pageScrollDuration]="0"
             class="nav-link text"
+            href="#top"
             [routerLinkActiveOptions]="{ exact: true }"
             routerLinkActive="active"
-            [routerLink]="item.link"
+            [routerLink]="[item.link]"
             >{{ item.name }}</a
           >
         </li>
       </ul>
 
       <div>
-        <a class="nav-link" href="/#about">
+        <a
+          pageScroll
+          [pageScrollOffset]="150"
+          class="nav-link"
+          href="#about"
+          routerLink="/"
+        >
           <button class="btn button-outline-grey">Sobre nosotros</button>
         </a>
       </div>

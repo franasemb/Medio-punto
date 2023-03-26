@@ -1,41 +1,45 @@
-<section class="mx-5" id="inicio" #inicio>
-  <div class="container">
-    <div class="row">
-      <div class="col text-jumbo">
-        <h3 class="text-gris text-42 fw-bold">Los Amigurumis</h3>
-        <h3 class="text-gris text-42 fw-bold">son un regalo</h3>
-        <h3 class="text-naranja text-42 fw-bold">
-          perfecto
-          <img
-            ngSrc="assets/osito-de-peluche.webp"
-            width="130"
-            height="58"
-            class="img-ami"
-            alt="osito"
-          />
-        </h3>
-
-        <a href="#about"
-          ><button class="btn btn-naranja mx-2 my-3 text-center">
-            Leer más
-          </button></a
-        >
-        <a routerLink="/trabajos"
-          ><button class="btn btn-outline-celeste my-3 text-center">
-            Trabajos
-          </button></a
-        >
-      </div>
-
-      <div class="col">
+<section class="container py-5" id="top">
+  <div class="row">
+    <div class="col-lg-6 text-jumbo" data-aos="fade-right">
+      <h1 class="text-gris fw-bold">
+        Los Amigurumis <br />
+        son un regalo
+        <br /><span class="text-naranja fw-bold">perfecto</span>
         <img
-          ngSrc="assets/jumbotron.webp"
-          width="1758"
-          height="1080"
-          class="img-fluid img-jumbo"
-          alt="imagen bienvenida"
+          ngSrc="assets/osito-de-peluche.webp"
+          width="130"
+          height="58"
+          class="img-ami"
+          alt="osito"
         />
-      </div>
+      </h1>
+
+      <a
+        pageScroll
+        [pageScrollOffset]="150"
+        href="#about"
+        type="button"
+        class="btn btn-naranja mx-2 my-3"
+      >
+        Leer más
+      </a>
+      <a
+        routerLink="/trabajos"
+        type="button"
+        class="btn btn-outline-celeste my-3"
+      >
+        Trabajos
+      </a>
+    </div>
+
+    <div class="col-lg-6" data-aos="zoom-in-left">
+      <img
+        ngSrc="assets/jumbotron.webp"
+        width="1758"
+        height="1080"
+        class="img-fluid img-jumbo"
+        alt="imagen bienvenida"
+      />
     </div>
   </div>
 </section>

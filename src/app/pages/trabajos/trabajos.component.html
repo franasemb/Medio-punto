@@ -1,10 +1,13 @@
-<section class="container" id="trabajos">
+<section class="container" id="trabajos" id="top">
   <div class="row">
-    <h3 class="text-dark text-center my-5">Trabajos Medio Punto</h3>
+    <h3 class="text-dark text-center my-5" data-aos="fade-up">
+      Trabajos Medio Punto
+    </h3>
     <ul
       class="nav nav-pills mb-3 text-center align-items-center justify-content-center"
       id="pills-tab"
       role="tablist"
+      data-aos="flip-up"
     >
       <li class="nav-item" role="presentation">
         <button
@@ -77,7 +80,7 @@
           'd-none': filtroActual !== 'todos' && image.category !== filtroActual
         }"
       >
-        <div class="card">
+        <div class="card" >
           <a
             (click)="openModal(image.id)"
             data-bs-toggle="modal"

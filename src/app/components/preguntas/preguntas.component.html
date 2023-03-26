@@ -1,12 +1,16 @@
-<section class="container">
+<section class="container" id="top">
   <div class="row">
     <div class="text-center fw-bold mt-5">
-      <h3 class="text-dark">F.A.Q</h3>
-      <P>Preguntas frecuentes</P>
+      <h3 class="text-dark" data-aos="fade-up">F.A.Q</h3>
+      <P data-aos="flip-up">Preguntas frecuentes</P>
     </div>
 
     <div class="accordion" id="accordionExample">
-      <div class="accordion-item my-4" *ngFor="let collapse of collapses">
+      <div
+        class="accordion-item my-4"
+        *ngFor="let collapse of collapses"
+        data-aos="zoom-in-down"
+      >
         <h2 class="accordion-header" [id]="'heading' + collapse.id">
           <button
             class="accordion-button collapsed"

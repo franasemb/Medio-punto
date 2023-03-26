@@ -1,4 +1,4 @@
-<section class="mx-5" id="about">
+<section class="mx-5 my-5" id="about" data-aos="zoom-in">
   <div class="container">
     <div>
       <p class="text-info-about">Sobre nosotros</p>
@@ -13,7 +13,13 @@
         Ofrecemos personalización en colores para hacer tu peluche único.
         ¡Permítenos crear algo especial para ti!
       </p>
-      <a routerLink="/contacto">
+      <a
+        pageScroll
+        [pageScrollOffset]="150"
+        [pageScrollDuration]="0"
+        href="#top"
+        routerLink="/contacto"
+      >
         <button class="btn btn-azul">Contactanos</button>
       </a>
     </div>

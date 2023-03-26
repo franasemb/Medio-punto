@@ -1,4 +1,4 @@
-<footer class="container">
+<footer class="container" data-aos="fade-up" data-aos-duration="1000">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 my-5 border-top">
     <div class="col mb-3">
       <a href="/" class="mb-3 text-decoration-none">
@@ -18,9 +18,16 @@
     <div class="col mb-3">
       <h5>Links extra</h5>
       <ul class="nav flex-column">
-        <a class="nav-link" href="/#inicio">Inicio</a>
+        <a class="nav-link" href="/">Inicio</a>
 
-        <a class="nav-link" href="/#about">Sobre nosotros</a>
+        <a
+          class="nav-link"
+          pageScroll
+          [pageScrollOffset]="150"
+          routerLink="/"
+          href="#about"
+          >Sobre nosotros</a
+        >
 
         <a class="nav-link" href="/trabajos">Trabajos</a>
 
