@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./trabajos.component.css'],
 })
 export class TrabajosComponent {
-  filtroActual = 'todos'; 
+  filtroActual = 'todos';
   images = [
     {
       id: 1,
@@ -113,9 +113,9 @@ export class TrabajosComponent {
       id: 11,
       category: 'pulpos',
       url: [
-        '/assets/trabajos/mantas y pulpos/pulpo-azul-blanco-2.webp',
-        '/assets/trabajos/mantas y pulpos/pulpo-azul-blanco-1.webp',
-        '/assets/trabajos/mantas y pulpos/pulpo-azul-blanco-3.webp',
+        '/assets/trabajos/pulpos/pulpo-azul-blanco-2.webp',
+        '/assets/trabajos/pulpos/pulpo-azul-blanco-1.webp',
+        '/assets/trabajos/pulpos/pulpo-azul-blanco-3.webp',
       ],
       alt: 'Pulpo de apego azul y blanco',
     },
@@ -123,9 +123,9 @@ export class TrabajosComponent {
       id: 12,
       category: 'pulpos',
       url: [
-        '/assets/trabajos/mantas y pulpos/pulpo-violeta-3.webp',
-        '/assets/trabajos/mantas y pulpos/pulpo-violeta-1.webp',
-        '/assets/trabajos/mantas y pulpos/pulpo-violeta-2.webp',
+        '/assets/trabajos/pulpos/pulpo-violeta-3.webp',
+        '/assets/trabajos/pulpos/pulpo-violeta-1.webp',
+        '/assets/trabajos/pulpos/pulpo-violeta-2.webp',
       ],
       alt: 'Pulpo de apego violeta',
     },
@@ -133,9 +133,9 @@ export class TrabajosComponent {
       id: 13,
       category: 'pulpos',
       url: [
-        '/assets/trabajos/mantas y pulpos/manta-1.webp',
-        '/assets/trabajos/mantas y pulpos/manta-2.webp',
-        '/assets/trabajos/mantas y pulpos/manta-3.webp',
+        '/assets/trabajos/pulpos/manta-1.webp',
+        '/assets/trabajos/pulpos/manta-2.webp',
+        '/assets/trabajos/pulpos/manta-3.webp',
       ],
       alt: 'Manta de apego',
     },
@@ -179,6 +179,55 @@ export class TrabajosComponent {
       ],
       alt: 'Unicornio',
     },
+    {
+      id: 18,
+      category: 'pulpos',
+      url: [
+        '/assets/trabajos/pulpos/portalapices-3.webp',
+        '/assets/trabajos/pulpos/portalapices-2.webp',
+        '/assets/trabajos/pulpos/portalapices-1.webp',
+      ],
+      alt: 'Portalapices',
+    },
+    {
+      id: 19,
+      category: 'pulpos',
+      url: [
+        '/assets/trabajos/pulpos/pulpo-azul-1.webp',
+        '/assets/trabajos/pulpos/pulpo-azul-2.webp',
+        '/assets/trabajos/pulpos/pulpo-azul-3.webp',
+      ],
+      alt: 'Pulpo de apego azul',
+    },
+    {
+      id: 20,
+      category: 'conejos',
+      url: [
+        '/assets/trabajos/conejos/conejo-largo-azul-2.webp',
+        '/assets/trabajos/conejos/conejo-largo-azul-3.webp',
+        '/assets/trabajos/conejos/conejo-largo-azul-1.webp',
+      ],
+      alt: 'Conejo azul',
+    },
+    {
+      id: 21,
+      category: 'dinosaurios',
+      url: [
+        '/assets/trabajos/dinosaurios/Dinosaurio-verde-2.webp',
+        '/assets/trabajos/dinosaurios/Dinosaurio-verde-3.webp',
+      ],
+      alt: 'Dinosaurio verde',
+    },
+  ];
+
+  navItem = [
+    { id: 'todos', text: 'Todos los amigurumis' },
+    { id: 'pulpos', text: 'Pulpos de apego' },
+    { id: 'dinosaurios', text: 'Dinosaurios' },
+    { id: 'personajes', text: 'Personajes' },
+    { id: 'unicornios', text: 'Unicornios' },
+    { id: 'conejos', text: 'Conejos' },
+    { id: 'osos', text: 'Osos' },
   ];
 
   modalTitle = '';
@@ -188,7 +237,7 @@ export class TrabajosComponent {
   filtrarImagenes(filtro: string) {
     this.filtroActual = filtro;
   }
-  
+
   openModal(id: number) {
     const image = this.images.find((i) => i.id === id);
 

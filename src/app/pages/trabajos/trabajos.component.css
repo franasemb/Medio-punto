@@ -4,29 +4,22 @@
   display: flex;
   justify-content: center !important;
 }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .nav-pills .nav-link.active {
   background-color: #c65471;
+  transition: all 0.4s ease-in-out;
+}
+.nav-pills .nav-link:not(.active):hover {
+  color: #c65471;
   transition: all 0.4s ease-in-out;
 }
 .nav-link {
   color: #5a5a5a;
   border-radius: 10px;
-}
-.tab-pane {
-  transition: all 0.4s ease-in-out;
-}
-.btn-naranja {
-  color: #fff;
-  border-radius: 7px;
-  width: 150px;
-  height: 45px;
-  background: #c65471;
-}
-.btn-naranja:hover {
-  border: 1px solid #c65471;
-  color: #c65471;
-  background: none;
-  transition: all 0.2s ease-in-out;
 }
 
 .card {

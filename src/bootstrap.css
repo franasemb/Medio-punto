@@ -4620,14 +4620,14 @@ fieldset:disabled .btn {
 .accordion-button:not(.collapsed) {
   background-color: #c6547125;
   border-radius: 10px;
-    transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJdJREFUSEvt0tENQDAUheHfBjZhBDZgUjZgBDYxgpzkSkTKvR48aV/bnq85vQUfr+LjfDLgNvy/ikrrZHO7sQNvKlL4ZPdaIIREgSO8NmABQkgEOIevBlRACPGAa3hjwAyEkCcgFX70rr0Q8gR0wACoFr38+qlnpAfG1GR5FQnRS+8mRojwZLhAD4iO++25DLgV5op+UNEObt0dGTxMEa8AAAAASUVORK5CYII=");
   color: #c65471;
   border-radius: 10px;
   transform: rotate(-180deg);
-    transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .accordion-button::after {
   flex-shrink: 0;
@@ -5347,7 +5347,6 @@ fieldset:disabled .btn {
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   opacity: 1;
 }
 .btn-close:disabled,

@@ -22,7 +22,7 @@ export class ContactoComponent {
       image: '/assets/email.webp',
       alt: 'email imagen',
       h5: 'Email',
-      p: 'mediopuntoamigurumi@gmail.com',
+      p: 'contacto@mediopunto.cf',
     },
     {
       image: '/assets/ubicacion.webp',

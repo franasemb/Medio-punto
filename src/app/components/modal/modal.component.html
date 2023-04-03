@@ -1,37 +1,22 @@
 <div
-  class="modal"
-  [id]="id"
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
   tabindex="-1"
-  role="dialog"
-  [attr.data-bs-target]="id"
-  aria-labelledby="exampleModalLabel"
+  aria-labelledby="staticBackdropLabel"
   aria-hidden="true"
 >
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">
-          {{ title }}
-        </h5>
-
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">{{ title }}</h1>
         <button
           type="button"
-          class="close"
+          class="btn-close"
           data-bs-dismiss="modal"
           aria-label="Close"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="#5a5a5a"
-            viewBox="0 0 256 256"
-          >
-            <path
-              d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
-            ></path>
-          </svg>
-        </button>
+        ></button>
       </div>
       <div class="modal-body">
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -52,7 +37,13 @@
               *ngFor="let image of url; let i = index"
               [class.active]="i === 0"
             >
-              <img [src]="image" [alt]="title + i" class="img-fluid" />
+              <img
+                [ngSrc]="image"
+                width="1080"
+                height="1350"
+                [alt]="title + i"
+                class="img-fluid"
+              />
             </div>
           </div>
           <button
