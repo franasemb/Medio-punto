@@ -9,6 +9,10 @@ svg {
 .nav-link:hover {
   color: #c65471;
 }
+.logo {
+  color: #c65471;
+  font-family: "another shabby";
+}
 @media (max-width: 578px) {
   footer {
     text-align: center;

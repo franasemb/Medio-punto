@@ -14,8 +14,9 @@ export class GoToTopComponent implements OnInit {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollTop = window.scrollY;
-    this.isScrollToTopVisible = scrollTop > 800;
+    this.isScrollToTopVisible = scrollTop > 100;
   }
+  
   ngOnInit() {
     init();
     refresh();

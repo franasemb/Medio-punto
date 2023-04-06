@@ -5,55 +5,13 @@
   src: local("another shabby"),
     url("assets/fonts/Anothershabby_trial.woff") format("woff");
 }
-* {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: #5a5a5a;
-}
-html {
-  scroll-behavior: smooth !important;
-}
-
-.text {
-  text-decoration: none;
-  color: #b5b7b6;
-}
-.text:hover {
-  color: #c65471;
-  transition: all 0.2s ease-in-out;
-}
-
-.logo {
-  color: #c65471;
-  font-family: "another shabby";
-}
-.img-navbar {
-  height: 40px;
-  width: 40px;
-}
-
-.button-outline-grey {
-  border: 1px solid #b5b7b6;
-  border-radius: 20px;
-  width: 155px;
-}
-.button-outline-grey:hover {
-  background-color: #b5b7b6;
-  color: #fff;
-  transition: all 0.2s ease-in-out;
-}
-
-.text-gris {
-  color: #424345;
-}
-
-.text-naranja {
-  color: #c65471;
-}
 
 * {
   scrollbar-width: auto;
   scrollbar-color: #c65471 #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #5a5a5a;
 }
 
 *::-webkit-scrollbar {
@@ -70,3 +28,23 @@ html {
   border: 3px solid #ffffff;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
+.text {
+  text-decoration: none;
+  color: #b5b7b6;
+}
+.text:hover {
+  color: #c65471;
+  transition: all 0.2s ease-in-out;
+}
+
+.text-gris {
+  color: #424345;
+}
+
+.text-naranja {
+  color: #c65471;
+}
