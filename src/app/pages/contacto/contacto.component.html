@@ -122,21 +122,136 @@
           data-aos-offset="500"
           data-aos-duration="500"
         >
-          <div class="course-info" *ngFor="let course of courses">
+          <div class="course-info">
             <div class="course-image">
               <img
-                [ngSrc]="course.image"
+                ngSrc="/assets/oficina.webp"
                 width="53"
                 height="53"
                 class="img-fluid"
-                [alt]="course.alt"
+                alt="Redes sociales imagen"
               />
             </div>
 
             <div class="course-content">
-              <h5 class="text-dark">{{ course.h5 }}</h5>
+              <h5 class="text-dark">Redes sociales</h5>
 
-              <p class="mb-5" [innerHTML]="course.p"></p>
+              <p class="mb-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill="#666666"
+                  viewBox="0 0 256 256"
+                  class="me-1"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <circle
+                    cx="128"
+                    cy="128"
+                    r="34"
+                    fill="none"
+                    stroke="#666666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></circle>
+                  <rect
+                    x="32"
+                    y="32"
+                    width="192"
+                    height="192"
+                    rx="48"
+                    fill="none"
+                    stroke="#666666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></rect>
+                  <circle cx="180" cy="76" r="16"></circle></svg
+                ><a href="https://www.instagram.com/mediopuntoamigurumis/"
+                  >mediopuntoamigurumi</a
+                >
+                <br /><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  fill="#666666"
+                  viewBox="0 0 256 256"
+                  class="me-1"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <circle
+                    cx="128"
+                    cy="128"
+                    r="96"
+                    fill="none"
+                    stroke="#666666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></circle>
+                  <path
+                    d="M168,88H152a23.9,23.9,0,0,0-24,24V224"
+                    fill="none"
+                    stroke="#666666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></path>
+                  <line
+                    x1="96"
+                    y1="144"
+                    x2="160"
+                    y2="144"
+                    fill="none"
+                    stroke="#666666"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></line>
+                </svg>
+                <a
+                  href="https://www.facebook.com/people/Daniela-Guiffrey/pfbid0S3eNaYNPDJnzuBmjGK9XzSJFz2DsbsUDqYJgXneRZtGSEFusBpqqVUVSgzJytxD6l/"
+                >
+                  Daniela Guiffrey</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="course-info">
+            <div class="course-image">
+              <img
+                ngSrc="/assets/email.webp"
+                width="53"
+                height="53"
+                class="img-fluid"
+                alt="Email imagen"
+              />
+            </div>
+
+            <div class="course-content">
+              <h5 class="text-dark">Email</h5>
+
+              <p class="mb-5">contacto@mediopunto.cf</p>
+            </div>
+          </div>
+          <div class="course-info">
+            <div class="course-image">
+              <img
+                ngSrc="/assets/ubicacion.webp"
+                width="53"
+                height="53"
+                class="img-fluid"
+                alt="ubicacion imagen"
+              />
+            </div>
+
+            <div class="course-content">
+              <h5 class="text-dark">Ubicación</h5>
+
+              <p class="mb-5">Villa Elisa, Entre Riós, Argentina</p>
             </div>
           </div>
         </div>

@@ -17,13 +17,13 @@ export class PreguntasComponent {
       id: 2,
       title: '¿Cómo puedo hacer un pedido?',
       description:
-        'Para hacer un pedido, puedes enviarme un mensaje a través del <a href="/contacto">formulario de contacto</a> o <a href="https://www.instagram.com/medio_punto_amigurumi/">mediante mi instagram.</a> Después de discutir los detalles de tu pedido, te proporcionaré un presupuesto y un plazo de entrega.',
+        'Para hacer un pedido, puedes enviarme un mensaje a través del <a href="/contacto">formulario de contacto</a> o <a href="https://www.instagram.com/mediopuntoamigurumi/">mediante mi instagram.</a> Después de discutir los detalles de tu pedido, te proporcionaré un presupuesto y un plazo de entrega.',
     },
     {
       id: 3,
       title: '¿Cómo es mi forma de trabajo?',
       description:
-        'Cuento con stock limitado, lo voy reponiendo a medida que se va vendiendo.<br/> Podes consultar el stock o ver <a href="https://www.instagram.com/medio_punto_amigurumi/">mis historias destacadas</a> con el nombre de "Disponibles".',
+        'Cuento con stock limitado, lo voy reponiendo a medida que se va vendiendo.<br/> Podes consultar el stock o ver <a href="https://www.instagram.com/mediopuntoamigurumi/">mis historias destacadas</a> con el nombre de "Disponibles".',
     },
     {
       id: 4,
