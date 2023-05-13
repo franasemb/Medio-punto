@@ -4,6 +4,7 @@
   font-family: "another shabby";
   src: local("another shabby"),
     url("assets/fonts/Anothershabby_trial.woff") format("woff");
+  font-display: swap;
 }
 
 * {
