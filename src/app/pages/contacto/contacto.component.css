@@ -131,6 +131,7 @@ textarea.input100 {
 }
 .container-contact100-form-btn {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   padding-top: 10px;
   padding-bottom: 43px;
@@ -149,7 +150,6 @@ textarea.input100 {
   color: #fff;
   line-height: 1.2;
   text-transform: uppercase;
-  padding-top: 5px;
   transition: all 0.4s;
   box-shadow: 0 10px 30px 0
     linear-gradient(90deg, rgb(198, 84, 113, 0.7) 0%, #fd6792 46%, #f889a9 100%);
