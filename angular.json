@@ -20,7 +20,6 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/assets", "src/robots.txt", "src/sitemap.xml"],
             "styles": [
-              "node_modules/aos/dist/aos.css",
               "src/styles.css",
               "node_modules/bootstrap/scss/bootstrap.scss"
             ],
@@ -89,7 +88,6 @@
             "karmaConfig": "karma.conf.js",
             "assets": ["src/assets", "src/robots.txt", "src/sitemap.xml"],
             "styles": [
-              "node_modules/aos/dist/aos.css",
               "src/styles.css",
               "node_modules/bootstrap/scss/bootstrap.scss"
             ],
@@ -117,7 +115,7 @@
             },
             "development": {
               "buildOptimizer": false,
-              "optimization": false,
+              "optimization": true,
               "sourceMap": true,
               "extractLicenses": false,
               "vendorChunk": true
@@ -142,9 +140,7 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "routes": [
-              "/"
-            ]
+            "routes": ["/"]
           },
           "configurations": {
             "production": {

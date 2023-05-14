@@ -1,4 +1,11 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import {
+  Component,
+  HostListener,
+  Inject,
+  OnInit,
+  PLATFORM_ID,
+} from '@angular/core';
 import { init, refresh } from 'aos';
 
 @Component({
@@ -9,7 +16,11 @@ import { init, refresh } from 'aos';
 export class GoToTopComponent implements OnInit {
   public isScrollToTopVisible: boolean = false;
 
-  constructor() {}
+  isWeb = false;
+
+  constructor(@Inject(PLATFORM_ID) plataform: Object) {
+    this.isWeb = isPlatformBrowser(PLATFORM_ID);
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -18,7 +29,9 @@ export class GoToTopComponent implements OnInit {
   }
 
   ngOnInit() {
-    init();
-    refresh();
+    if (this.isWeb) {
+      init();
+      refresh();
+    }
   }
 }
