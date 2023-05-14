@@ -71,9 +71,6 @@
       <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
         <li class="nav-item" *ngFor="let item of navbar">
           <a
-            pageScroll
-            [pageScrollOffset]="150"
-            [pageScrollDuration]="0"
             class="nav-link text"
             href="#top"
             [routerLinkActiveOptions]="{ exact: true }"
@@ -86,8 +83,6 @@
 
       <div>
         <a
-          pageScroll
-          [pageScrollOffset]="150"
           class="nav-link"
           href="#about"
           routerLink="/"
