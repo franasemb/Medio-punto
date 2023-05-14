@@ -32,7 +32,14 @@
 html {
   scroll-behavior: smooth !important;
 }
-
+.accordion-link {
+  color: #c65471;
+  text-decoration: none;
+}
+.accordion-link:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
 .text {
   text-decoration: none;
   color: #b5b7b6;

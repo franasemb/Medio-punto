@@ -1,7 +1,6 @@
 .modal-content {
   display: flex;
   flex-direction: column;
-
   background-color: #fff;
   color: #000;
   border-radius: 20px;
@@ -12,6 +11,7 @@
 .modal-header {
   padding-top: 20px;
   padding-bottom: 0;
+  border-bottom: none;
 }
 img {
   border-radius: 15px;
