@@ -20,6 +20,7 @@
 }
 
 .accordion-button:not(.collapsed) {
+  color: #212529;
   background-color: #c6547125;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;

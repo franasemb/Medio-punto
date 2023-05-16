@@ -1,5 +1,7 @@
 .navbar-nav .nav-link.active {
   color: #c65471;
+  justify-content: center;
+  align-items: center;
 }
 svg {
   height: 20px;
@@ -32,4 +34,7 @@ svg {
 }
 .navbar-toggler-icon {
   background-image: none;
+}
+.navbar-brand:hover {
+  color: #c65471;
 }

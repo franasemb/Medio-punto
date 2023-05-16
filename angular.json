@@ -18,7 +18,12 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/assets", "src/robots.txt", "src/sitemap.xml"],
+            "assets": [
+              "src/assets",
+              "src/favicon.ico",
+              "src/robots.txt",
+              "src/sitemap.xml"
+            ],
             "styles": [
               "src/styles.css",
               "node_modules/bootstrap/scss/bootstrap.scss"
@@ -86,7 +91,12 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": ["src/assets", "src/robots.txt", "src/sitemap.xml"],
+            "assets": [
+              "src/assets",
+              "src/favicon.ico",
+              "src/robots.txt",
+              "src/sitemap.xml"
+            ],
             "styles": [
               "src/styles.css",
               "node_modules/bootstrap/scss/bootstrap.scss"
@@ -115,7 +125,7 @@
             },
             "development": {
               "buildOptimizer": false,
-              "optimization": true,
+              "optimization": false,
               "sourceMap": true,
               "extractLicenses": false,
               "vendorChunk": true

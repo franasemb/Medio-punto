@@ -14,7 +14,7 @@ import { ModelosComponent } from './components/modelos/modelos.component';
 import { CaracteristicasComponent } from './components/caracteristicas/caracteristicas.component';
 
 import { HomeComponent } from './pages/home/home.component';
-import { GoToTopComponent } from './components/go-to-top/go-to-top.component';
+import { NgxScrollTopModule } from 'ngx-scrolltop';
 
 @NgModule({
   declarations: [
@@ -26,13 +26,13 @@ import { GoToTopComponent } from './components/go-to-top/go-to-top.component';
     ModelosComponent,
     FooterComponent,
     CaracteristicasComponent,
-    GoToTopComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgOptimizedImage,
+    NgxScrollTopModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

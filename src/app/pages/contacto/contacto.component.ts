@@ -42,8 +42,6 @@ export class ContactoComponent {
         showConfirmButton: false,
       });
     } catch (error: any) {
-      console.log(error.text);
-
       Swal.fire({
         icon: 'warning',
         title: 'No se pudo enviar el mensaje',

@@ -1,6 +1,9 @@
-<nav class="navbar navbar-expand-lg shadow-sm sticky-top bg-body">
-  <div class="container">
-    <a class="navbar-brand nav-title logo" href="/">
+<nav
+  class="navbar navbar-expand-lg fixed-top shadow-sm bg-body"
+  role="navigation"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand nav-title logo " href="/">
       <img
         ngSrc="/assets/logo.webp"
         srcset="/assets/logo.webp"
@@ -72,21 +75,18 @@
         <li class="nav-item" *ngFor="let item of navbar">
           <a
             class="nav-link text"
-            href="#top"
+            type="button"
             [routerLinkActiveOptions]="{ exact: true }"
-            routerLinkActive="active"
-            [routerLink]="[item.link]"
+            [routerLinkActive]="'active'"
+            [routerLink]="item.link"
+            href="#top"
             >{{ item.name }}</a
           >
         </li>
       </ul>
 
       <div>
-        <a
-          class="nav-link"
-          href="#about"
-          routerLink="/"
-        >
+        <a class="nav-link" href="#about" type="button">
           <button class="btn button-outline-grey">Sobre nosotros</button>
         </a>
       </div>
