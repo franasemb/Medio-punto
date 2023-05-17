@@ -16,7 +16,8 @@ export class TrabajosComponent {
         '/assets/trabajos/conejos/coneja-naranja-2.webp',
         '/assets/trabajos/conejos/coneja-naranja-3.webp',
       ],
-      alt: 'Coneja naranja',
+      title: 'Coneja naranja',
+      alt: 'Amigurumi conejo naranja',
     },
 
     {
@@ -27,7 +28,8 @@ export class TrabajosComponent {
         '/assets/trabajos/conejos/coneja-rosada-3.webp',
         '/assets/trabajos/conejos/coneja-rosada-1.webp',
       ],
-      alt: 'Coneja rosada',
+      title: 'Coneja rosada',
+      alt: 'Amigurumi coneja rosada',
     },
     {
       id: 3,
@@ -37,7 +39,8 @@ export class TrabajosComponent {
         '/assets/trabajos/conejos/coneja-rosada-chenille-1.webp',
         '/assets/trabajos/conejos/coneja-rosada-chenille-2.webp',
       ],
-      alt: 'Coneja rosada confeccionada en chenille',
+      title: 'Coneja rosada confeccionada en chenille',
+      alt: 'Amigurumi coneja rosada',
     },
     {
       id: 4,
@@ -47,7 +50,8 @@ export class TrabajosComponent {
         '/assets/trabajos/conejos/conejo-aguamarina-2.webp',
         '/assets/trabajos/conejos/conejo-aguamarina-3.webp',
       ],
-      alt: 'Conejo aguamarina',
+      title: 'Conejo aguamarina',
+      alt: 'Amigurumi conejo aguamarina',
     },
     {
       id: 5,
@@ -57,7 +61,8 @@ export class TrabajosComponent {
         '/assets/trabajos/conejos/conejo-amarillo-3.webp',
         '/assets/trabajos/conejos/conejo-amarillo-1.webp',
       ],
-      alt: 'conejo amarillo',
+      title: 'conejo amarillo',
+      alt: 'Amigurumi conejo amarillo',
     },
     {
       id: 6,
@@ -67,7 +72,8 @@ export class TrabajosComponent {
         '/assets/trabajos/conejos/conejo-azul-1.webp',
         '/assets/trabajos/conejos/conejo-azul-2.webp',
       ],
-      alt: 'Conejo azul',
+      title: 'Conejo azul',
+      alt: 'Amigurumi conejo azul',
     },
     {
       id: 7,
@@ -77,7 +83,8 @@ export class TrabajosComponent {
         '/assets/trabajos/conejos/conejo-bordo-2.webp',
         '/assets/trabajos/conejos/conejo-bordo-3.webp',
       ],
-      alt: 'Conejo bordo',
+      title: 'Conejo bordo',
+      alt: 'Amigurumi conejo bordo',
     },
     {
       id: 8,
@@ -87,7 +94,8 @@ export class TrabajosComponent {
         '/assets/trabajos/conejos/conejo-rojo-3.webp',
         '/assets/trabajos/conejos/conejo-rojo-1.webp',
       ],
-      alt: 'Conejo rojo',
+      title: 'Conejo rojo',
+      alt: 'Amigurumi conejo rojo',
     },
     {
       id: 9,
@@ -97,7 +105,8 @@ export class TrabajosComponent {
         '/assets/trabajos/conejos/conejo-verde-2.webp',
         '/assets/trabajos/conejos/conejo-verde-1.webp',
       ],
-      alt: 'Conejo verde',
+      title: 'Conejo verde',
+      alt: 'Amigurumi conejo verde',
     },
     {
       id: 10,
@@ -107,7 +116,8 @@ export class TrabajosComponent {
         '/assets/trabajos/dinosaurios/dinosaurio-2.webp',
         '/assets/trabajos/dinosaurios/dinosaurio-3.webp',
       ],
-      alt: 'Dinosaurio',
+      title: 'Dinosaurio',
+      alt: 'Amigurumi dinosaurio',
     },
     {
       id: 11,
@@ -117,7 +127,8 @@ export class TrabajosComponent {
         '/assets/trabajos/pulpos/pulpo-azul-blanco-1.webp',
         '/assets/trabajos/pulpos/pulpo-azul-blanco-3.webp',
       ],
-      alt: 'Pulpo de apego azul y blanco',
+      title: 'Pulpo de apego azul y blanco',
+      alt: 'Amigurumi conejo pulpo de apego',
     },
     {
       id: 12,
@@ -127,7 +138,8 @@ export class TrabajosComponent {
         '/assets/trabajos/pulpos/pulpo-violeta-1.webp',
         '/assets/trabajos/pulpos/pulpo-violeta-2.webp',
       ],
-      alt: 'Pulpo de apego violeta',
+      title: 'Pulpo de apego violeta',
+      alt: 'Amigurumi pulpo violeta',
     },
     {
       id: 13,
@@ -137,7 +149,8 @@ export class TrabajosComponent {
         '/assets/trabajos/pulpos/manta-2.webp',
         '/assets/trabajos/pulpos/manta-3.webp',
       ],
-      alt: 'Manta de apego',
+      title: 'Manta de apego',
+      alt: 'Amigurumi manta de apego',
     },
     {
       id: 14,
@@ -147,7 +160,8 @@ export class TrabajosComponent {
         '/assets/trabajos/osos/osa-violeta-1.webp',
         '/assets/trabajos/osos/osa-violeta-3.webp',
       ],
-      alt: 'Osa violeta',
+      title: 'Osa violeta',
+      alt: 'Amigurumi oso violeta',
     },
     {
       id: 15,
@@ -157,7 +171,8 @@ export class TrabajosComponent {
         '/assets/trabajos/osos/oso-verde-2.webp',
         '/assets/trabajos/osos/oso-verde-1.webp',
       ],
-      alt: 'Oso verde',
+      title: 'Oso verde',
+      alt: 'Amigurumi oso verde',
     },
     {
       id: 16,
@@ -167,7 +182,8 @@ export class TrabajosComponent {
         '/assets/trabajos/stitch/stitch-2.webp',
         '/assets/trabajos/stitch/stitch-3.webp',
       ],
-      alt: 'Stitch',
+      title: 'Stitch',
+      alt: 'Amigurumi Stitch',
     },
     {
       id: 17,
@@ -177,7 +193,8 @@ export class TrabajosComponent {
         '/assets/trabajos/unicornio/unicornio-1.webp',
         '/assets/trabajos/unicornio/unicornio-3.webp',
       ],
-      alt: 'Unicornio',
+      title: 'Unicornio',
+      alt: 'Amigurumi unicornio',
     },
     {
       id: 18,
@@ -187,7 +204,8 @@ export class TrabajosComponent {
         '/assets/trabajos/pulpos/portalapices-2.webp',
         '/assets/trabajos/pulpos/portalapices-1.webp',
       ],
-      alt: 'Portalapices',
+      title: 'Portalapices',
+      alt: 'Amigurumi portalapices',
     },
     {
       id: 19,
@@ -197,7 +215,8 @@ export class TrabajosComponent {
         '/assets/trabajos/pulpos/pulpo-azul-2.webp',
         '/assets/trabajos/pulpos/pulpo-azul-3.webp',
       ],
-      alt: 'Pulpo de apego azul',
+      title: 'Pulpo de apego azul',
+      alt: 'Amigurumi pulpo de apego azul',
     },
     {
       id: 20,
@@ -207,7 +226,8 @@ export class TrabajosComponent {
         '/assets/trabajos/conejos/conejo-largo-azul-3.webp',
         '/assets/trabajos/conejos/conejo-largo-azul-1.webp',
       ],
-      alt: 'Conejo azul',
+      title: 'Conejo azul',
+      alt: 'Amigurumi conejo azul',
     },
     {
       id: 21,
@@ -216,7 +236,8 @@ export class TrabajosComponent {
         '/assets/trabajos/dinosaurios/Dinosaurio-verde-2.webp',
         '/assets/trabajos/dinosaurios/Dinosaurio-verde-3.webp',
       ],
-      alt: 'Dinosaurio verde',
+      title: 'Dinosaurio verde',
+      alt: 'Amigurumi dinosaurio',
     },
   ];
 
@@ -230,7 +251,8 @@ export class TrabajosComponent {
     { id: 'osos', text: 'Osos' },
   ];
 
-  modalTitle = '';
+  modaltitle = '';
+  modalAlt = '';
   modalUrl = [''];
   modalId = '';
 
@@ -242,9 +264,10 @@ export class TrabajosComponent {
     const image = this.images.find((i) => i.id === id);
 
     if (image) {
-      this.modalTitle = image.alt;
+      this.modaltitle = image.title;
       this.modalUrl = image.url;
       this.modalId = 'exampleModal' + image.id;
+      this.modalAlt = image.alt;
     }
   }
 }

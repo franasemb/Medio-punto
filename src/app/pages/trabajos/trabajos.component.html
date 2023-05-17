@@ -36,11 +36,12 @@
             width="448"
             height="398"
             class="card-image"
-            [alt]="image.url"
+            [alt]="image.alt"
+            [title]="image.title"
           />
         </a>
       </div>
     </div>
   </div>
 </section>
-<app-modal [title]="modalTitle" [url]="modalUrl" [id]="modalId"></app-modal>
+<app-modal [title]="modaltitle" [alt]="modalAlt" [url]="modalUrl" [id]="modalId"></app-modal>

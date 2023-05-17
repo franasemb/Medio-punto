@@ -9,5 +9,5 @@ export class ModalComponent {
   @Input() id: string = '';
   @Input() title: string = '';
   @Input() url: Array<string> = [''];
-
+  @Input() alt: string = '';
 }

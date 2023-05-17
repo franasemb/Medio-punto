@@ -9,6 +9,7 @@ export class CaracteristicasComponent {
   caracteristicas = [
     {
       url: '/assets/Pollen%20Allergy-bro.svg',
+      title: 'Hilo hipoalergenico',
       alt: 'bola de hilo card',
       name: 'Hilo hipoalergénico',
       description:
@@ -16,6 +17,7 @@ export class CaracteristicasComponent {
     },
     {
       url: '/assets/Eyes-bro.svg',
+      title: 'Ojitos de seguridad',
       alt: 'ojo card',
       name: 'Ojitos de seguridad',
       description:
@@ -23,6 +25,7 @@ export class CaracteristicasComponent {
     },
     {
       url: '/assets/Sales%20consulting-bro.svg',
+      title: 'Diferentes modelos',
       alt: 'modelo card',
       name: 'Diferentes modelos',
       description:
