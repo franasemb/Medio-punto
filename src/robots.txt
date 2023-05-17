@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /cdn-cgi/l/email-protection
 Sitemap: https://www.mediopunto.cf/sitemap.xml
+Sitemap: https://www.mediopunto.cf/imagessitemap.xml
